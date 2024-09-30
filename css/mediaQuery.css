@@ -1,0 +1,72 @@
+@media only screen and (max-width:992px) {
+    nav .rightSide{
+        display: none;
+    }
+
+    .nav-bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .slider .thumbnail {
+        display: none;
+    }
+
+    .itemDetails {
+        text-align: center;
+    }
+
+    .calc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageLayer {
+        height: 970px;
+    }
+
+    .navMobileLayer {
+        height: 970px;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99999;
+    }
+    
+} 
+
+
+@media only screen and (max-width:772px) {
+    .imageLayer {
+        height: 1050px;
+    }
+
+    .imageLayer img {
+        width: 450px;
+        height: 350px;
+        border-radius: 5px;
+    }
+    
+    .navMobileLayer {
+        height: 1050px;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99999;
+    }
+} 
+
+@media only screen and (max-width:475px) {
+    .imageLayer {
+        height: 1210px;
+    }
+    
+    .imageLayer img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .navMobileLayer {
+        height: 1210px;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99999;
+    }
+} 

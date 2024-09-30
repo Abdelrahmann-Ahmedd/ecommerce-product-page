@@ -1,0 +1,158 @@
+nav {
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    opacity: 70%;
+    transition: 0.2s all;
+}
+
+a:hover {
+    opacity: 100%;
+}
+
+nav .navIcon img {
+    --imagSize:40px;
+    width: var(--imagSize);
+    height: var(--imagSize);
+}
+
+.nav-bar {
+    display: none;
+}
+
+nav .rightSide {
+    display: flex;
+}
+
+nav .rightSide li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s  all;
+    position: relative;
+}
+
+nav .rightSide li::after {
+    --bgColor:hsl(26, 100%, 55%);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--bgColor);
+    bottom: 0%;
+    opacity: 0%;
+    transition: 0.2s all;
+}
+
+nav .rightSide li:hover::after {
+    opacity: 100%;
+}
+
+nav .navIcon figure {
+    border: 3px solid  transparent;
+    border-radius: 50%;
+    transition: 0.2s all;
+}
+
+nav .navIcon figure:hover {
+    border-color: hsl(26, 100%, 55%);
+}
+
+i {
+    cursor: pointer;
+}
+
+.navMobileLayer {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+}
+
+.slider .live img {
+    width: 100%;    
+    height: 350px;
+    border-radius: 10px;
+}
+
+.slider .thumbnail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .thumbnail img {
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.slider .thumbnail figure {
+    border: 3px solid transparent;
+    transition: 0.2s all;
+    position: relative;
+}
+
+.slider .thumbnail figure::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.2s all;
+}
+
+.slider .thumbnail figure:hover::after {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    background-color: rgba(255, 255, 255, 0.5) !important; 
+    border: 3px solid hsl(26, 100%, 55%);
+    border-radius: 5px;
+}
+
+.fa-chevron-left {
+    left: 2%;
+    color: white;    
+}
+.fa-chevron-right {
+    right: 2%;
+    color: white;
+}
+
+.imageLayer {
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.imageLayer img {
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    right: 0%;
+    z-index: 999;
+}
+
+
+
+.hide {
+    display: none;
+}

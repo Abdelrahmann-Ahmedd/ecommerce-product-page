@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>E-commerce product page</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaQuery.css" />
+  </head>
+  <body>
+    <header class="vh-100">
+      <nav class="container-fluid ps-5 pe-5 d-flex shadow-sm position-relative">
+        <div class="leftSide h-100 d-flex align-items-center bg-white">
+          <i class="fa fa-navicon fa-xl ms-2 me-3 nav-bar"></i>
+          <h1 class="fs-1 fw-bold">Sneakers</h1>
+        </div>
+        <div class="rightSide h-100 ms-5">
+          <ul class="list-unstyled h-100 d-flex m-auto align-items-center">
+            <li class="me-5"><a href="#">Collictions</a></li>
+            <li class="me-5"><a href="#">Men</a></li>
+            <li class="me-5"><a href="#">Women</a></li>
+            <li class="me-5"><a href="#">About</a></li>
+            <li class="me-5"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navIcon h-100 d-flex align-items-center ms-auto">
+          <i class="fa fa-cart-shopping me-4"></i>
+          <figure>
+            <img src="./images/image-avatar.png" alt="user image" />
+          </figure>
+        </div>
+
+        <div class="card p-1 position-absolute top-100 hide">
+          <h2 class="fs-4 fw-bold border-bottom p-3">Card</h2>
+          <div class="cardList d-flex flex-column pb-5"></div>
+        </div>
+      </nav>
+
+      <div class="navMobileLayer w-100 position-absolute top-0 hide">
+        <ul class="list-unstyled w-75 h-100 d-flex flex-column p-5 bg-white">
+          <li class="w-100 mb-5">
+            <i class="fa fa-close fa-2xl"></i>
+          </li>
+          <li class="w-1005 mb-3">
+            <a href="#">Collictions</a>
+          </li>
+          <li class="w-1005 mb-3">
+            <a href="#">Men</a>
+          </li>
+          <li class="w-1005 mb-3">
+            <a href="#">Women</a>
+          </li>
+          <li class="w-1005 mb-3">
+            <a href="#">About</a>
+          </li>
+          <li class="w-1005 mb-3">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content container pt-5 ps-5 pe-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="slider">
+              <div class="live">
+                <figure class="position-relative">
+                  <img src="./images/image-product-1.jpg" alt="" />
+                  <i
+                    class="currentRightArrow position-absolute top-50 fa-solid fa-chevron-right fa-2xl"
+                  ></i>
+                  <i
+                    class="currentLeftArrow position-absolute top-50 fa-solid fa-chevron-left fa-2xl"
+                  ></i>
+                </figure>
+              </div>
+              <div class="thumbnail w-100">
+                <figure class="active">
+                  <img src="./images/image-product-1.jpg" alt="" />
+                </figure>
+                <figure class="">
+                  <img src="./images/image-product-2.jpg" alt="" />
+                </figure>
+                <figure class="">
+                  <img src="./images/image-product-3.jpg" alt="" />
+                </figure>
+                <figure class="">
+                  <img src="./images/image-product-4.jpg" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="itemDetails p-5">
+              <h2 class="fs-5 fw-bold opacity-50">Sneaker Company</h2>
+              <h3 class="fs-1 fw-bold">Fall Limited Edition Sneakers</h3>
+              <p class="fs-6 opacity-75">
+                These low-profile sneakers are your perfect casual wear
+                companion. Featuring a durable rubber outer sole, they’ll
+                withstand everything the weather can offer.
+              </p>
+              <h4>
+                <span class="price">$125.00</span>
+                <span class="ms-5 bg-black p-1 fs-5 text-white rounded-1"
+                  >50%</span
+                >
+              </h4>
+              <h4 class="fs-6 opacity-50 text-decoration-line-through">
+                $250.00
+              </h4>
+              <div class="calc d-flex">
+                <div class="d-flex align-items-center fs-4 fw-bold">
+                  <button class="btn fs-2 fw-bold mines border-0">-</button>
+                  <span class="showNum ms-5 me-5">0</span>
+                  <button class="plus btn fs-2 fw-bold border-0">+</button>
+                </div>
+              </div>
+              <button class="addBtn mt-3 btn btn-lg bg-warning text-white">
+                <i class="fa fa-cart-shopping fa-xs me-3"></i> Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="imageLayer position-absolute hide">
+      <figure class="position-relative">
+        <img src="./images/image-product-1.jpg" alt="" />
+        <i
+          class="layerRightArrow position-absolute top-50 fa-solid fa-chevron-right fa-2xl"
+        ></i>
+        <i
+          class="layerLeftArrow position-absolute top-50 fa-solid fa-chevron-left fa-2xl"
+        ></i>
+      </figure>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+<!--           0  -->
